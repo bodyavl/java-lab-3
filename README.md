@@ -17,7 +17,7 @@ Create [Product](./src/main/java/org/program/Product.java) class with all necess
 ### Step 4
 
 - Add tests for all classes with JUnit.
-- Use Mosckito for mocking methods.
+- Mock methods with Mockito
 
 Checked scenarios guarantee correct program execution.
 
