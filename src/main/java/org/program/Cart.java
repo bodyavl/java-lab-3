@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class Cart {
     ArrayList<Product> products;
 
-    public Cart(){}
+    public Cart(){
+        products = new ArrayList<Product>();
+    }
     public Cart(ArrayList<Product> products) {
         this.products = products;
     }
