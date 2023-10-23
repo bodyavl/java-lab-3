@@ -12,13 +12,13 @@ public class OrderTests {
 
     @Test
     void GetStatusTest() {
-        when(order.GetStatus()).thenReturn("Created");
-        assertEquals("Created", order.GetStatus());
+        when(order.GetStatus()).thenReturn("Not Created");
+        assertEquals("Not Created", order.GetStatus());
     }
 
     @Test
     void MakeOrderTest() {
-        when(order.MakeOrder()).thenReturn("Ordered");
-        assertEquals("Ordered", order.MakeOrder());
+        when(order.MakeOrder()).thenReturn("Created");
+        assertEquals("Created", order.MakeOrder());
     }
 }

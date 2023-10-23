@@ -9,7 +9,11 @@ public class Order {
     public Order(int orderId, ArrayList<Product> products) {
         OrderId = orderId;
         Products = products;
-        status = "Created";
+        status = "Not Created";
+    }
+    public Order(int orderId) {
+        OrderId = orderId;
+        status = "Not Created";
     }
     
     public String GetStatus() {
@@ -17,7 +21,7 @@ public class Order {
     }
 
     public String MakeOrder() {
-        status = "Ordered";
+        status = "Created";
         return status;
     }
 }
